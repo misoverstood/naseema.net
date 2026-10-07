@@ -1,25 +1,60 @@
 <!doctype html>
-
-<html>
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>naseema.net</title>
-<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
 
 <style type="text/css">
-
-body p {
-	text-align: center;
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
-	font-size: 500%;
+	color: #222;
+}
+main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1rem;
+}
+main p {
+	margin: 0;
+	text-align: center;
+	font-size: clamp(2.5rem, 9vw, 5rem);
+}
+footer {
+	padding: 1.5rem 1rem;
+	text-align: center;
+	font-size: .85rem;
+	line-height: 1.8;
+	color: #6b6b6b;
+}
+.ring a { color: #6b6b6b; text-decoration: none; white-space: nowrap; }
+.ring a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ring a[aria-current] { color: #222; }
+@media (prefers-color-scheme: dark) {
+	body { background: #161616; color: #e6e6e6; }
+	footer, .ring a { color: #9a9a9a; }
+	.ring a[aria-current] { color: #e6e6e6; }
 }
 </style>
 </head>
 
 <body>
 
+<main>
 <p>new site coming soon!</p>
+</main>
 
+<footer>
+<nav class="ring links-ring" data-links-ring aria-label="My other sites"></nav>
+</footer>
+
+<script src="https://misoverstood.github.io/links-ring/ring.js" defer></script>
 </body>
 </html>
